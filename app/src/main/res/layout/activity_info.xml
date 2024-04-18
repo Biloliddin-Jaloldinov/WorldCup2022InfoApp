@@ -1,0 +1,698 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_info_activity_reverse">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/titleConstraint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintTitle"
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_title"
+                    android:paddingLeft="15dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintHorizontal_bias="0.8"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:id="@+id/txtCommand"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:paddingVertical="8dp"
+                        android:text="S. arabistoni"
+                        android:textAllCaps="true"
+                        android:textColor="#FFF7F6D9"
+                        android:textSize="24sp"
+                        android:textStyle="bold"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/txtCommandGroup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:paddingVertical="8dp"
+                        android:text=" C  guruhida"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="@id/txtCommand"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/txtCommand" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <ImageView
+                    android:id="@+id/imgCommand"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_marginEnd="4dp"
+                    android:src="@drawable/flag_saudiya_arabistoni"
+                    app:layout_constraintLeft_toLeftOf="@+id/constraintTitle"
+                    app:layout_constraintRight_toLeftOf="@id/constraintTitle"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <com.github.siyamed.shapeimageview.RoundedImageView
+                android:id="@+id/viewPages"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/img_qatar_team"
+                app:layout_constraintTop_toBottomOf="@id/titleConstraint"
+                app:siBorderColor="#E6D19A"
+                app:siBorderWidth="6dp" />
+
+            <LinearLayout
+                android:id="@+id/recycleText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="vertical"
+                app:layout_constraintTop_toBottomOf="@id/viewPages">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="24dp"
+                    android:shadowColor="@color/white"
+                    android:shadowDx="2"
+                    android:shadowDy="2"
+                    android:shadowRadius="3"
+                    android:text="taxallusi:"
+                    android:textAllCaps="true"
+
+                    android:textColor="#FF0000"
+                    android:textSize="24sp"
+                    android:textStyle="bold|italic" />
+
+                <TextView
+                    android:id="@+id/txtFirstDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingHorizontal="60dp"
+                    android:shadowColor="@color/black"
+                    android:shadowDx="2"
+                    android:shadowDy="2"
+                    android:shadowRadius="3"
+                    android:text="to'pga egalik qilish, qarshi hujum"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintLeft_toRightOf="@id/titleTxtAboutTeam"
+                    app:layout_constraintRight_toRightOf="@id/titleTxtAboutTeam"
+                    app:layout_constraintTop_toBottomOf="@id/titleTxtAboutTeam" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="24dp"
+                    android:shadowColor="@color/white"
+                    android:shadowDx="2"
+                    android:shadowDy="2"
+                    android:shadowRadius="3"
+                    android:text="fifa reytingida:"
+                    android:textAllCaps="true"
+
+                    android:textColor="#FF0000"
+                    android:textSize="24sp"
+                    android:textStyle="bold|italic" />
+
+                <TextView
+                    android:id="@+id/txtSecondDescription"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:justificationMode="inter_word"
+                    android:shadowColor="@color/black"
+                    android:shadowDx="2"
+                    android:shadowDy="2"
+                    android:shadowRadius="3"
+                    android:text="to'rtinchi martta"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintLeft_toRightOf="@id/titleTxtAboutTeam"
+                    app:layout_constraintRight_toRightOf="@id/titleTxtAboutTeam"
+                    app:layout_constraintTop_toBottomOf="@id/titleTxtAboutTeam" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="24dp"
+                    android:shadowColor="@color/white"
+                    android:shadowDx="2"
+                    android:shadowDy="2"
+                    android:shadowRadius="3"
+                    android:text="Jahon chempionatida:"
+                    android:textAllCaps="true"
+
+                    android:textColor="#FF0000"
+                    android:textSize="24sp"
+                    android:textStyle="bold|italic" />
+
+                <TextView
+                    android:id="@+id/txtThirdDescription"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:justificationMode="inter_word"
+                    android:shadowColor="@color/black"
+                    android:shadowDx="2"
+
+                    android:shadowDy="2"
+                    android:shadowRadius="3"
+                    android:text="to'rtinchi martta"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="24dp"
+                    android:shadowColor="@color/white"
+                    android:shadowDx="2"
+                    android:shadowDy="2"
+                    android:shadowRadius="3"
+                    android:text="Eng yuqori natijasi:"
+                    android:textAllCaps="true"
+
+                    android:textColor="#FF0000"
+                    android:textSize="24sp"
+                    android:textStyle="bold|italic" />
+
+                <TextView
+                    android:id="@+id/txtFourthDescription"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:justificationMode="inter_word"
+                    android:shadowColor="@color/black"
+                    android:shadowDx="2"
+                    android:shadowDy="2"
+                    android:shadowRadius="3"
+
+                    android:text="to'rtinchi martta"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="24dp"
+                    android:shadowColor="@color/white"
+                    android:shadowDx="2"
+                    android:shadowDy="2"
+                    android:shadowRadius="3"
+                    android:text="O'yin uslubi:"
+                    android:textAllCaps="true"
+
+                    android:textColor="#FF0000"
+                    android:textSize="24sp"
+                    android:textStyle="bold|italic" />
+
+                <TextView
+                    android:id="@+id/txtFifthDescription"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:justificationMode="inter_word"
+                    android:shadowColor="#2C0000"
+                    android:shadowDx="2"
+                    android:shadowDy="2"
+                    android:shadowRadius="5"
+                    android:text="to'rtinchi martta"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linerImages"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginTop="8dp"
+                android:orientation="vertical"
+                app:layout_constraintTop_toBottomOf="@id/recycleText">
+
+                <TextView
+                    android:id="@+id/titleTxtAboutTeam"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:gravity="center"
+                    android:shadowColor="@color/black"
+                    android:shadowDx="1"
+                    android:shadowDy="1"
+                    android:shadowRadius="1"
+                    android:text="Jamoaning yetakchi futbolchilari:"
+                    android:textAllCaps="true"
+                    android:textColor="#FFEE58"
+                    android:textSize="18sp"
+                    android:textStyle="bold|italic" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.github.siyamed.shapeimageview.OctogonImageView
+                        android:id="@+id/imgFirstPlayer"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="4dp"
+                        android:layout_weight="1"
+                        android:focusableInTouchMode="true"
+                        android:src="@drawable/player_ekvador_3"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toLeftOf="@id/imgSecondPlayer"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:siBorderColor="#E6D19A"
+                        app:siBorderWidth="4dp" />
+
+                    <com.github.siyamed.shapeimageview.OctogonImageView
+                        android:id="@+id/imgSecondPlayer"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="4dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/player_ekvador_3"
+                        app:layout_constraintLeft_toRightOf="@+id/imgFirstPlayer"
+                        app:layout_constraintRight_toRightOf="parent"
+
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:siBorderColor="#E6D19A"
+                        app:siBorderWidth="4dp" />
+
+                    <com.github.siyamed.shapeimageview.OctogonImageView
+                        android:id="@+id/imgThirdPlayer"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="4dp"
+                        android:layout_weight="1"
+                        android:focusableInTouchMode="true"
+                        android:src="@drawable/player_qatar_3"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toLeftOf="@id/imgFourthPlayer"
+                        app:layout_constraintTop_toBottomOf="@id/textFirstPlayer"
+                        app:siBorderColor="#E6D19A"
+                        app:siBorderWidth="4dp" />
+
+                    <com.github.siyamed.shapeimageview.OctogonImageView
+                        android:id="@+id/imgFourthPlayer"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:focusableInTouchMode="true"
+                        android:src="@drawable/player_qatar_3"
+                        app:layout_constraintLeft_toRightOf="@+id/imgThirdPlayer"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="@id/imgThirdPlayer"
+                        app:siBorderColor="#E6D19A"
+                        app:siBorderWidth="4dp" />
+
+
+                    <TextView
+                        android:id="@+id/textFirstPlayer"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginEnd="4dp"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:text="Rahim sterling"
+                        android:textAllCaps="true"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        app:layout_constraintLeft_toLeftOf="@id/imgFirstPlayer"
+                        app:layout_constraintRight_toRightOf="@id/imgFirstPlayer"
+                        app:layout_constraintTop_toBottomOf="@id/imgFirstPlayer" />
+
+                    <TextView
+                        android:id="@+id/textSecondPlayer"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginEnd="4dp"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:text="Rahim sterling"
+                        android:textAllCaps="true"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        app:layout_constraintLeft_toLeftOf="@id/imgSecondPlayer"
+                        app:layout_constraintRight_toRightOf="@id/imgSecondPlayer"
+                        app:layout_constraintTop_toBottomOf="@id/imgSecondPlayer" />
+
+                    <TextView
+                        android:id="@+id/textThirdPlayer"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_marginEnd="4dp"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:text="Rahim sterling"
+                        android:textAllCaps="true"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        app:layout_constraintLeft_toLeftOf="@id/imgThirdPlayer"
+                        app:layout_constraintRight_toRightOf="@id/imgThirdPlayer"
+                        app:layout_constraintTop_toBottomOf="@id/imgThirdPlayer" />
+
+                    <TextView
+                        android:id="@+id/textFourthPlayer"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_marginEnd="4dp"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:text="Kristian "
+                        android:textAllCaps="true"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        app:layout_constraintLeft_toLeftOf="@id/imgFourthPlayer"
+                        app:layout_constraintRight_toRightOf="@id/imgFourthPlayer"
+                        app:layout_constraintTop_toBottomOf="@id/imgFourthPlayer" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:gravity="center"
+                    android:shadowColor="@color/white"
+                    android:shadowDx="1"
+                    android:shadowDy="1"
+                    android:shadowRadius="1"
+                    android:text="Guruh bosqich o'yinlari:"
+                    android:textAllCaps="true"
+                    android:textColor="#FFEE58"
+                    android:textSize="18sp"
+                    android:textStyle="bold|italic" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/recycleMatch"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintLeft_toLeftOf="@id/linerImages"
+                app:layout_constraintRight_toRightOf="@id/linerImages"
+                app:layout_constraintTop_toBottomOf="@+id/linerImages">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1 - TUR"
+                        android:textColor="#FFF7F6D9"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toTopOf="@id/firstMatchConstraint"
+                        app:layout_constraintLeft_toLeftOf="@id/firstMatchConstraint"
+                        app:layout_constraintRight_toRightOf="@id/firstMatchConstraint" />
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/firstMatchConstraint"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_title"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <TextView
+                            android:id="@+id/firstMatchDate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:text="21.11.2022"
+                            android:textColor="#FFE81F"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/firstMatchTime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="18:00"
+                            android:textColor="#FFFFFF"
+                            android:textSize="28sp"
+                            android:textStyle="bold"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/firstMatchDate" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <com.github.siyamed.shapeimageview.DiamondImageView
+                        android:id="@+id/imgMatch1_1"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/flag_saudiya_arabistoni"
+                        app:layout_constraintBottom_toBottomOf="@+id/firstMatchConstraint"
+                        app:layout_constraintLeft_toLeftOf="@+id/firstMatchConstraint"
+                        app:layout_constraintRight_toLeftOf="@+id/firstMatchConstraint"
+                        app:layout_constraintTop_toTopOf="@+id/firstMatchConstraint"
+                        app:siBorderColor="#F7F6D3"
+                        app:siBorderWidth="2dp" />
+
+                    <com.github.siyamed.shapeimageview.DiamondImageView
+                        android:id="@+id/imgMatch1_2"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/flag_angliya"
+                        app:layout_constraintBottom_toBottomOf="@+id/firstMatchConstraint"
+                        app:layout_constraintLeft_toRightOf="@+id/firstMatchConstraint"
+                        app:layout_constraintRight_toRightOf="@+id/firstMatchConstraint"
+                        app:layout_constraintTop_toTopOf="@+id/firstMatchConstraint"
+                        app:siBorderColor="#F7F6D3"
+                        app:siBorderWidth="2dp" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2 - TUR"
+                        android:textColor="#FFF7F6D9"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toTopOf="@id/secondMatchConstraint"
+                        app:layout_constraintLeft_toLeftOf="@id/secondMatchConstraint"
+                        app:layout_constraintRight_toRightOf="@id/secondMatchConstraint" />
+
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/secondMatchConstraint"
+                        android:layout_width="150dp"
+                        android:layout_height="70dp"
+                        android:background="@drawable/bg_title"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <TextView
+                            android:id="@+id/secondMatchDate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:text="21.11.2022"
+                            android:textColor="#FFE81F"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/secondMatchTime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0 : 0"
+                            android:textColor="#FFFFFF"
+                            android:textSize="28sp"
+                            android:textStyle="bold"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/secondMatchDate" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <com.github.siyamed.shapeimageview.DiamondImageView
+                        android:id="@+id/imgMatch2_1"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/flag_saudiya_arabistoni"
+                        app:layout_constraintBottom_toBottomOf="@+id/secondMatchConstraint"
+                        app:layout_constraintLeft_toLeftOf="@+id/secondMatchConstraint"
+                        app:layout_constraintRight_toLeftOf="@+id/secondMatchConstraint"
+                        app:layout_constraintTop_toTopOf="@+id/secondMatchConstraint"
+                        app:siBorderColor="#F7F6D3"
+                        app:siBorderWidth="2dp" />
+
+                    <com.github.siyamed.shapeimageview.DiamondImageView
+                        android:id="@+id/imgMatch2_2"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/flag_angliya"
+                        app:layout_constraintBottom_toBottomOf="@+id/secondMatchConstraint"
+                        app:layout_constraintLeft_toRightOf="@+id/secondMatchConstraint"
+                        app:layout_constraintRight_toRightOf="@+id/secondMatchConstraint"
+                        app:layout_constraintTop_toTopOf="@+id/secondMatchConstraint"
+                        app:siBorderColor="#F7F6D3"
+                        app:siBorderWidth="2dp" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="3 - TUR"
+                            android:textColor="#FFF7F6D9"
+                            android:textSize="18dp"
+                            android:textStyle="bold"
+                            app:layout_constraintBottom_toTopOf="@id/thirdMatchConstraint"
+                            app:layout_constraintLeft_toLeftOf="@id/thirdMatchConstraint"
+                            app:layout_constraintRight_toRightOf="@id/thirdMatchConstraint" />
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/thirdMatchConstraint"
+                            android:layout_width="150dp"
+                            android:layout_height="70dp"
+                            android:background="@drawable/bg_title"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <TextView
+                                android:id="@+id/thirdMatchDate"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp"
+                                android:text="21.11.2022"
+                                android:textColor="#FFE81F"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                app:layout_constraintLeft_toLeftOf="parent"
+                                app:layout_constraintRight_toRightOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:id="@+id/thirdMatchTime"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="18:00"
+                                android:textColor="#FFFFFF"
+                                android:textSize="28sp"
+                                android:textStyle="bold"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintLeft_toLeftOf="parent"
+                                app:layout_constraintRight_toRightOf="parent"
+                                app:layout_constraintTop_toBottomOf="@id/thirdMatchDate" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <com.github.siyamed.shapeimageview.DiamondImageView
+                            android:id="@+id/imgMatch3_1"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:src="@drawable/flag_saudiya_arabistoni"
+                            app:layout_constraintBottom_toBottomOf="@id/thirdMatchConstraint"
+                            app:layout_constraintLeft_toLeftOf="@+id/thirdMatchConstraint"
+                            app:layout_constraintRight_toLeftOf="@+id/thirdMatchConstraint"
+                            app:layout_constraintTop_toTopOf="@id/thirdMatchConstraint"
+                            app:siBorderColor="#F7F6D3"
+                            app:siBorderWidth="2dp" />
+
+                        <com.github.siyamed.shapeimageview.DiamondImageView
+                            android:id="@+id/imgMatch3_2"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:src="@drawable/flag_angliya"
+                            app:layout_constraintBottom_toBottomOf="@id/thirdMatchConstraint"
+                            app:layout_constraintLeft_toRightOf="@+id/thirdMatchConstraint"
+                            app:layout_constraintRight_toRightOf="@+id/thirdMatchConstraint"
+                            app:layout_constraintTop_toTopOf="@id/thirdMatchConstraint"
+                            app:siBorderColor="#F7F6D3"
+                            app:siBorderWidth="2dp" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp" />
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</LinearLayout>
